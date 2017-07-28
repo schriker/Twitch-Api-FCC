@@ -1,0 +1,10 @@
+*{
+    margin: 0 auto;
+}
+
+body{
+    background: url(../img/bg.jpg);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #bfbfbf;
+}
