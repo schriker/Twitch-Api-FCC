@@ -13,8 +13,7 @@ body{
 .main-container{
     position: absolute;
     left: 50%;
-    top: 120px;
-    width: 30%;
+    width: 40%;
     transform: translate(-50%,0%);
     background-color: #fff;
     -webkit-box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.2);
@@ -101,15 +100,11 @@ body{
 }
 
 .main-tabs li:hover{
-    -webkit-box-shadow: inset 0px -3px 0px 0px rgba(110,75,140,1);
-    -moz-box-shadow: inset 0px -3px 0px 0px rgba(110,75,140,1);
-    box-shadow: inset 0px -3px 0px 0px rgba(110,75,140,1);
+    background-color: #fcfcfc;
 }
 
 .active-tab{
-    -webkit-box-shadow: inset 0px -2px 0px 0px rgba(234,234,234,1);
-    -moz-box-shadow: inset 0px -2px 0px 0px rgba(234,234,234,1);
-    box-shadow: inset 0px -2px 0px 0px rgba(234,234,234,1);
+    background-color: #fcfcfc;
 }
 
 .stream-list{
@@ -139,13 +134,22 @@ body{
     margin: 33px 0 0 0;
 }
 
-.stream-list h2::after{
+.online h2::after{
     content: '';
     display: inline-block;
     width: 10px;
     height: 10px;
     margin: 0 0 0 10px;
-    background-color: #33cf33; /*Offline #cf3a33*/
+    background-color: #33cf33;
+}
+
+.offline h2::after{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 0 0 10px;
+    background-color: #cf3a33; 
 }
 
 .stream-list img{
