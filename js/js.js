@@ -49,3 +49,19 @@ function offlineStreamInfo(offlineStreamName){
     });
 }
 
+$(document).ready(function(){
+    $(".main-tabs li a").click(function(){
+        var className = $(this).attr("class");
+        
+        $(".main-tabs li").removeClass("active-tab");
+        $(this).parent().addClass("active-tab");
+
+        if (className == "all"){
+            $(".stream-list").show();
+        }
+        else {
+            $(".stream-list:not(."+className+")").hide();
+            $("."+className).show();
+        }
+    });
+});
