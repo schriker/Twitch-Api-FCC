@@ -50,7 +50,8 @@ function offlineStreamInfo(offlineStreamName){
 }
 
 $(document).ready(function(){
-    $(".main-tabs li a").click(function(){
+    $(".main-tabs li a").click(function(e){
+        e.preventDefault();
         var className = $(this).attr("class");
         
         $(".main-tabs li").removeClass("active-tab");
