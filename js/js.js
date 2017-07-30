@@ -65,4 +65,16 @@ $(document).ready(function(){
             $("."+className).show();
         }
     });
+
+    $("#search-input").keyup(function(){
+        var searchValue = $(this).val();
+        $(".stream-title").each(function(){
+            if ($(this).text().search(new RegExp(searchValue, "i")) < 0) {
+                $(this).parent().hide();
+            }
+            else {
+                $(this).parent().show();
+            }
+        });
+    });
 });
